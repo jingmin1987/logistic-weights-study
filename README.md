@@ -1,1 +1,4 @@
 # logistic-weights-study
+This notebook illustrates how sampling and weighting impact the coefficients estimated using logistic regression when dealing with unbalanced datasets. This is quite common in the risk analytics space as most loans are in good condition while only few are in delinquency or terminal status. In order to capture the relationship between features and labels for under-represented samples, sampling (usually downsampling) and weighting are most commonly used techniques. However, we often encounter below scenarios:
+	1. Sample captures a similar relationship between features and labels to what is in the full sample. In this case, sampling and weighting are practically the same.
+	2. Sample captures a different relationship between features and labels than what is in the full sample. This is usually due to significant unbalancedness in the full sample that makes the classifier to ignore any characteristics in the under-represented class.
